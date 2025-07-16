@@ -1,0 +1,167 @@
+/* Section Carrousel */
+.carousel {
+    padding: 10px 10px 10px 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/*conteneur carrousel*/
+.carouselContainer {
+    display: flex;
+    justify-content: flex-start;    /*aligner vers la gauche*/
+    gap: 0;    
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.carouselItem {
+    width: 50%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.carouselVideo {
+    
+    height: 100%;
+    object-fit: cover;   /*remplir l'espace sans deformation*/
+    width: 100%;
+
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Section Nos Services */
+.servicesSection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.sectionTitle {
+    font-size: 4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.sectionDescription {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.cardsSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color:black;
+    color: white;
+    width: 22%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/*bouton */
+.ctaButton {
+    padding: 10px 20px;
+    background-color: #00fffb;
+    color:black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*animation du bouton*/
+.ctaButton:hover {
+    background-color: #0056b3;
+}
+
+/* Section Making-of */
+.makingOf {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.makingOf .sectionTitle {
+    font-size: 4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.makingOf .sectionDescription {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.makingOfVideo {
+    width: 80%;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* Section Thèmes */
+
+.themes {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.themesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.themeItem {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.themeItem:hover {
+    transform: scale(1.05);
+}
+
+.themeImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.themeOverlay {
+    position: absolute;        /* permet de supperposerle texte*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

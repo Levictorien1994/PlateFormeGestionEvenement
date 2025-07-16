@@ -1,0 +1,73 @@
+.footer {
+    display: flex;    /*affichage en ligne*/
+    justify-content: space-between;   /*repartition des element sur la largeur*/
+    align-items: center;  /*centrer le element*/
+    padding: 20px;   /*espace autour des contenu*/
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+.section {
+    flex: 1;  /*repartrir les section a part egale*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;    /*espacement entre les icneas*/
+}
+
+.socialIcons img {
+    cursor: pointer;    /*indiquer que les images sont cliquable*/
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease; /* Animation fluide */
+}
+/* Animation de zoom au survol */
+.socialIcons img:hover {
+    transform: scale(1.1);
+}
+
+.interactions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.interactions img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+.interactions img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Empile les sections en colonne */
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .section {
+        margin-bottom: 10px;
+    }
+
+    .socialIcons, .interactions {
+        gap: 10px; /* Réduit l'espacement pour les petits écrans */
+    }
+}

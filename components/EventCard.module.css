@@ -1,0 +1,147 @@
+/* Section Carrousel */
+.carousel {
+    padding: 10px 10px 10px 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/*conteneur carrousel*/
+.carouselContainer {
+    display: flex;
+    justify-content: flex-start;    /*aligner vers la gauche*/
+    gap: 0;    
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+ 
+}
+ 
+.carouselItem {
+    width: 50%;
+    max-width: 600px;
+    overflow: hidden;
+}
+ 
+.carouselVideo {
+   
+    height: 100%;
+    object-fit: cover;   /*remplir l'espace sans deformation*/
+    width: 100%;
+ 
+}
+/* Section details des evements */
+.retouche {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.retouche .sectionTitle {
+    font-size: 4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/*description de l'evement*/
+.retouche .sectionDescription {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.retoucheVideo {
+    width: 80%;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.themeImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.reserveSection {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.reserveLink {
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.reserveLink:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+
+    /* Ajustement du carrousel pour mobile */
+    .carouselContainer {
+        flex-direction: column;
+        /* Vidéos affichées en colonne */
+        align-items: center;
+    }
+
+    .carouselItem {
+        width: 100%;
+        /* Chaque élément prend toute la largeur */
+    }
+
+    /* Ajustement des sections */
+    .retouche {
+        padding: 30px 10px;
+    }
+
+    .retouche .sectionTitle {
+        font-size: 2.5rem;
+    }
+
+    .retouche .sectionDescription {
+        font-size: 1.4rem;
+    }
+
+    /*  Ajustement de la vidéo */
+    .retoucheVideo {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    /*  Centrer le bouton de réservation */
+    .reserveSection {
+        justify-content: center;
+    }
+
+    .reserveLink {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustement pour les très petits écrans */
+    .retouche .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .retouche .sectionDescription {
+        font-size: 1.2rem;
+    }
+
+    .reserveLink {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+}

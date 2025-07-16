@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 238, 255);
+    color: black;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    gap: 15px;
+}
+
+.navLink:hover {
+    color: #4a90e2;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.compteButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+
+.compteButton:hover {
+    color: #007bff;
+}
+
+.logoText {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Menu Hamburger (masqué par défaut) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        /* Afficher le bouton hamburger */
+    }
+
+    .nav {
+        display: none;
+        /* Masquer la navigation par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: rgb(0, 238, 255);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navOpen {
+        display: flex;
+        /* Afficher la navigation lorsque le menu est ouvert */
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navItem {
+        margin: 0;
+    }
+}

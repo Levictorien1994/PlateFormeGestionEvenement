@@ -1,0 +1,104 @@
+.eventList {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  /* Dégradé doux */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333333;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  /* Fond dégradé subtil */
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  /* Ombre plus marquée */
+  overflow: hidden;
+  /* Pour gérer les coins arrondis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  /* Effet de déplacement subtil */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+  /* Ombre plus profonde */
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 50%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+  /* Zoom au survol */
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+  color: #333333;
+}
+
+.cardDate {
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.cardButton {
+  background: linear-gradient(90deg, #4a90e2, #6bc5d2);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cardButton:hover {
+  background: linear-gradient(90deg, #6bc5d2, #4a90e2);
+  /* Dégradé inversé */
+  transform: scale(1.1);
+  /* Légère mise en avant */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
